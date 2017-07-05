@@ -114,6 +114,9 @@ public class
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
         //nested for loop
+        if (someJobs.size()<1) {
+            System.out.println("No results found");
+        }
         for (HashMap<String, String> jobs : someJobs){
             System.out.println("*******");
             for (Map.Entry<String,String> job : jobs.entrySet()){
